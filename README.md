@@ -117,6 +117,10 @@ Validasi digunakan untuk memastikan input yang dimasukkan sesuai dengan kebutuha
 
 Validasi diterapkan pada beberapa input seperti ID, nama ikan, jenis ikan, jumlah stok, habitat, kedalaman habitat, dan jenis perairan.
 
+Contohnya :
+
+<img width="383" height="192" alt="image" src="https://github.com/user-attachments/assets/7e8968b9-b466-4b9d-a3b0-77db7d9e803c" />
+
 ## 4. Penjelasan Letak Penerapan Nilai Tambah
 
 ### Struktur MVC (Model-View-Controller)
