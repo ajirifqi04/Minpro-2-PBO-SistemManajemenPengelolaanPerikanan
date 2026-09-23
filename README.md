@@ -41,7 +41,7 @@ Program memiliki fitur tambah, tampil, ubah, dan hapus data perikanan. Pada prog
 
 10. Program terus berjalan sampai pengguna memilih menu **Keluar**.
 
-## 3. Penjelasan Penerapan Encapsulation dan Inheritance
+## 3. Penjelasan Penerapan Encapsulation, Inheritance, Dummy Data, Validasi Input
 
 ### Struktur Class
 
@@ -62,26 +62,16 @@ Encapsulation diterapkan dengan menggunakan access modifier `private` pada atrib
 
 Contoh pada `model/Ikan.java`:
 
-```java
-private String idIkan;
-private String namaIkan;
-private String jenisIkan;
-private int jumlahStok;
-```
+<img width="349" height="145" alt="image" src="https://github.com/user-attachments/assets/a14f4594-740c-4790-8f20-9e1e6151b122" />
 
 Atribut tersebut tidak dapat diakses secara langsung dari luar class. Untuk mengambil dan mengubah data digunakan method getter dan setter.
 
 Contohnya:
 
-```java
-public String getIdIkan() {
-    return idIkan;
-}
+<img width="343" height="87" alt="image" src="https://github.com/user-attachments/assets/1d93ea8d-852a-45a6-9d08-ffd3a92fb4d0" />
 
-public void setNamaIkan(String namaIkan) {
-    this.namaIkan = namaIkan;
-}
-```
+<img width="533" height="83" alt="image" src="https://github.com/user-attachments/assets/e7e75ff0-7eb7-4adf-a9a1-867ee440e315" />
+
 
 Penerapan encapsulation juga terdapat pada class `IkanLaut`, `IkanAirTawar`, `LokasiPenangkapan`, dan `HasilPenangkapan`.
 
@@ -99,21 +89,33 @@ Ikan
 
 Pada `model/IkanLaut.java`, inheritance diterapkan menggunakan `extends`:
 
-```java
-public class IkanLaut extends Ikan {
-    private int kedalamanHabitat;
-}
-```
+<img width="430" height="60" alt="image" src="https://github.com/user-attachments/assets/df442a2b-5452-419a-9907-efa1c8c8b100" />
 
 Sedangkan `IkanAirTawar` juga mewarisi class `Ikan`:
 
-```java
-public class IkanAirTawar extends Ikan {
-    private String jenisPerairan;
-}
-```
+<img width="500" height="62" alt="image" src="https://github.com/user-attachments/assets/b968a653-98aa-4d21-91b9-60708272b265" />
 
 Kedua subclass tersebut mewarisi atribut dan method dari `Ikan`, kemudian memiliki atribut tambahan masing-masing. `IkanLaut` memiliki `kedalamanHabitat`, sedangkan `IkanAirTawar` memiliki `jenisPerairan`.
+
+### Dummy Data Awal
+
+Dummy data awal diterapkan pada `controller/IkanController.java`.
+
+Saat `IkanController` dibuat, program langsung memasukkan data awal ke dalam `ArrayList`, yaitu data ikan, lokasi penangkapan, dan hasil penangkapan.
+
+Contohnya:
+
+<img width="253" height="243" alt="image" src="https://github.com/user-attachments/assets/411b6884-4c99-4284-b78a-4d18544bfc04" />
+
+Dengan adanya dummy data tersebut, pengguna dapat langsung melihat data ketika menjalankan fitur tampil data tanpa harus memasukkan data terlebih dahulu.
+
+### Validasi Input
+
+Validasi input diterapkan pada bagian input di `view/IkanView.java`.
+
+Validasi digunakan untuk memastikan input yang dimasukkan sesuai dengan kebutuhan program. Jika input tidak sesuai, pengguna akan diminta untuk memasukkan kembali data tersebut.
+
+Validasi diterapkan pada beberapa input seperti ID, nama ikan, jenis ikan, jumlah stok, habitat, kedalaman habitat, dan jenis perairan.
 
 ## 4. Penjelasan Letak Penerapan Nilai Tambah
 
@@ -143,36 +145,6 @@ Contoh pada `model/IkanLaut.java`:
 Sedangkan pada `IkanAirTawar`, method yang sama digunakan untuk menampilkan informasi tambahan berupa `jenisPerairan`.
 
 Dengan overriding tersebut, method `tampilkanDetail()` dapat memberikan tampilan yang berbeda sesuai dengan jenis objek yang digunakan.
-
-### Dummy Data Awal
-
-Dummy data awal diterapkan pada `controller/IkanController.java`.
-
-Saat `IkanController` dibuat, program langsung memasukkan data awal ke dalam `ArrayList`, yaitu data ikan, lokasi penangkapan, dan hasil penangkapan.
-
-Contohnya:
-
-```java
-daftarIkan.add(
-    new IkanLaut(
-        "IK001",
-        "Ikan Tuna",
-        "Konsumsi",
-        50,
-        100
-    )
-);
-```
-
-Dengan adanya dummy data tersebut, pengguna dapat langsung melihat data ketika menjalankan fitur tampil data tanpa harus memasukkan data terlebih dahulu.
-
-### Validasi Input
-
-Validasi input diterapkan pada bagian input di `view/IkanView.java`.
-
-Validasi digunakan untuk memastikan input yang dimasukkan sesuai dengan kebutuhan program. Jika input tidak sesuai, pengguna akan diminta untuk memasukkan kembali data tersebut.
-
-Validasi diterapkan pada beberapa input seperti ID, nama ikan, jenis ikan, jumlah stok, habitat, kedalaman habitat, dan jenis perairan.
 
 ### Screenshot Output Sistem
 
