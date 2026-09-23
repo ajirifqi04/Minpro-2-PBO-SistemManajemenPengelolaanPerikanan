@@ -138,7 +138,7 @@ Method `tampilkanDetail()` yang terdapat pada class `Ikan` dioverride pada class
 
 Contoh pada `model/IkanLaut.java`:
 
-<img width="826" height="222" alt="image" src="https://github.com/user-attachments/assets/99e04f2a-ac4e-4da8-a22f-a9bf1a708057" />
+<img width="925" height="233" alt="image" src="https://github.com/user-attachments/assets/22a1f9ff-1c1b-41a4-8ef2-0804c947774c" />
 
 Sedangkan pada `IkanAirTawar`, method yang sama digunakan untuk menampilkan informasi tambahan berupa `jenisPerairan`.
 
