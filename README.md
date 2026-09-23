@@ -1,6 +1,8 @@
 # Minpro 2 PBO - Sistem Informasi Pengelolaan Perikanan
 
-Nama : Aji Rifqi Suryana NIM : 2509116054
+Nama : Aji Rifqi Suryana 
+
+NIM : 2509116054
 
 ## 1. Deskripsi Singkat Program
 
