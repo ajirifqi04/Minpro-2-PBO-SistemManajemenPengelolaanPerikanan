@@ -1,5 +1,7 @@
 # Minpro 2 PBO - Sistem Informasi Pengelolaan Perikanan
 
+Nama : Aji Rifqi Suryana NIM : 2509116054
+
 ## 1. Deskripsi Singkat Program
 
 Program ini merupakan pengembangan dari Mini Project 1 berupa aplikasi berbasis console menggunakan Java untuk mengelola data perikanan. Data yang dikelola meliputi data ikan, lokasi penangkapan, dan hasil penangkapan.
