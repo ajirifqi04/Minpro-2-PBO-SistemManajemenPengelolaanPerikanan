@@ -123,21 +123,7 @@ Program menggunakan struktur MVC dengan membagi class ke dalam beberapa package.
 
 Struktur package yang digunakan pada project adalah:
 
-```text
-Source Packages
-├── controller
-│   └── IkanController.java
-├── main
-│   └── Main.java
-├── model
-│   ├── HasilPenangkapan.java
-│   ├── Ikan.java
-│   ├── IkanAirTawar.java
-│   ├── IkanLaut.java
-│   └── LokasiPenangkapan.java
-└── view
-    └── IkanView.java
-```
+<img width="340" height="350" alt="image" src="https://github.com/user-attachments/assets/543edb01-637f-438a-a85b-9e3e0f52c407" />
 
 - **Model** digunakan untuk menyimpan class yang berhubungan dengan data program, yaitu `Ikan`, `IkanLaut`, `IkanAirTawar`, `LokasiPenangkapan`, dan `HasilPenangkapan`.
 - **View** digunakan untuk menampilkan menu dan menerima input dari pengguna melalui `IkanView`.
@@ -152,16 +138,7 @@ Method `tampilkanDetail()` yang terdapat pada class `Ikan` dioverride pada class
 
 Contoh pada `model/IkanLaut.java`:
 
-```java
-@Override
-public void tampilkanDetail() {
-    System.out.println("ID Ikan: " + getIdIkan());
-    System.out.println("Nama Ikan: " + getNamaIkan());
-    System.out.println("Jenis Ikan: " + getJenisIkan());
-    System.out.println("Jumlah Stok: " + getJumlahStok() + " kg");
-    System.out.println("Kedalaman Habitat: " + kedalamanHabitat + " meter");
-}
-```
+<img width="826" height="222" alt="image" src="https://github.com/user-attachments/assets/99e04f2a-ac4e-4da8-a22f-a9bf1a708057" />
 
 Sedangkan pada `IkanAirTawar`, method yang sama digunakan untuk menampilkan informasi tambahan berupa `jenisPerairan`.
 
