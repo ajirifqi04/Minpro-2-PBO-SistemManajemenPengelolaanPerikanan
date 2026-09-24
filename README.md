@@ -1,4 +1,4 @@
-# Minpro 2 PBO - Sistem Informasi Pengelolaan Perikanan
+# Minpro 2 PBO - Sistem Manajemen Pengelolaan Perikanan
 
 Nama : Aji Rifqi Suryana 
 
