@@ -14,32 +14,24 @@ Program memiliki fitur tambah, tampil, ubah, dan hapus data perikanan. Pada prog
 
 ## 2. Penjelasan Alur Program
 
-1. Program dimulai dari `Main.java`, kemudian program membuat objek `IkanController` dan `IkanView`.
+Program dimulai dari `Main.java` dengan membuat objek `IkanController` dan `IkanView`. Setelah itu, `IkanController` menyiapkan `ArrayList` dan memasukkan satu data dummy sebagai data awal. Program kemudian menampilkan menu utama yang terdiri dari tambah data, tampilkan data, ubah data, hapus data, dan keluar.
 
-2. Saat `IkanController` dibuat, program langsung mengisi dummy data awal ke dalam `ArrayList`, sehingga data sudah tersedia ketika program dijalankan.
+1. **Tambah Data Perikanan**  
+   Pengguna memilih menu tambah data, kemudian memasukkan data ikan seperti ID ikan, nama ikan, jenis ikan, jumlah stok, dan habitat. Jika memilih ikan laut, pengguna memasukkan kedalaman habitat, sedangkan jika memilih ikan air tawar, pengguna memasukkan jenis perairan. Setelah itu, pengguna memasukkan data lokasi penangkapan dan hasil penangkapan. Data lokasi dan hasil penangkapan menggunakan `idIkan` yang sama agar terhubung dengan data ikan.
 
-3. Program menampilkan menu utama yang terdiri dari:
-   - Tambah Data Perikanan
-   - Tampilkan Data Perikanan
-   - Ubah Data Perikanan
-   - Hapus Data Perikanan
-   - Keluar
+2. **Tampilkan Data Perikanan**  
+   Pengguna memilih menu tampilkan data. Program mengambil data dari `ArrayList`, kemudian menampilkan data ikan beserta lokasi penangkapan dan hasil penangkapan yang memiliki `idIkan` yang sama.
 
-4. Pada menu **Tambah Data Perikanan**, pengguna memasukkan data ikan berupa ID ikan, nama ikan, jenis ikan, dan jumlah stok.
+3. **Ubah Data Perikanan**  
+   Pengguna memilih menu ubah data dan memasukkan `idIkan` yang ingin diubah. Program mencari data berdasarkan ID tersebut. Jika data ditemukan, pengguna dapat mengubah data ikan, lokasi penangkapan, dan hasil penangkapan yang terkait dengan ID tersebut.
 
-5. Pengguna memilih habitat ikan, yaitu `Ikan Laut` atau `Ikan Air Tawar`.
-   - Jika memilih `Ikan Laut`, pengguna memasukkan kedalaman habitat.
-   - Jika memilih `Ikan Air Tawar`, pengguna memasukkan jenis perairan.
+4. **Hapus Data Perikanan**  
+   Pengguna memilih menu hapus data dan memasukkan `idIkan` yang ingin dihapus. Program mencari data berdasarkan ID tersebut. Jika ditemukan, data ikan beserta lokasi penangkapan dan hasil penangkapan yang memiliki `idIkan` yang sama akan dihapus.
 
-6. Setelah data ikan dibuat, pengguna memasukkan data lokasi penangkapan dan hasil penangkapan. Kedua data tersebut menggunakan `idIkan` yang sama dengan data ikan sehingga memiliki hubungan dengan ikan yang dimasukkan.
+5. **Keluar**  
+   Jika pengguna memilih menu keluar, perulangan menu dihentikan dan program selesai dijalankan.
 
-7. Pada menu **Tampilkan Data Perikanan**, program menampilkan data ikan beserta lokasi penangkapan dan hasil penangkapan yang memiliki `idIkan` yang sama.
-
-8. Pada menu **Ubah Data Perikanan**, pengguna memasukkan `idIkan` untuk mencari data yang ingin diubah. Jika data ditemukan, pengguna dapat mengubah data ikan, lokasi penangkapan, dan hasil penangkapan yang terkait.
-
-9. Pada menu **Hapus Data Perikanan**, pengguna memasukkan `idIkan`. Jika data ditemukan, data ikan beserta lokasi penangkapan dan hasil penangkapan yang memiliki `idIkan` yang sama akan dihapus.
-
-10. Program terus berjalan sampai pengguna memilih menu **Keluar**.
+Selama proses input, program melakukan validasi untuk memastikan data yang dimasukkan sesuai dengan ketentuan. Jika input tidak sesuai, pengguna akan diminta memasukkan kembali data tersebut.
 
 ## 3. Penjelasan Penerapan Encapsulation, Inheritance, Dummy Data, Validasi Input
 
