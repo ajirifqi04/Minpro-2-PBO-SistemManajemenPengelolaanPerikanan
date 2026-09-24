@@ -18,13 +18,14 @@ Program dimulai dari `Main.java` dengan membuat objek `IkanController` dan `Ikan
 
 #### Menu Utama
 
+1. **Menu Utama**
+   Pada tahap ini, sistem saat dijalankan akan menampilkan menu awal yang berisi pilihan untuk menambah, menampilkan, mengubah, dan menghapus data perikanan serta keluar dari program.
+   
 <p align="center">
 <img width="421" height="179" alt="image" src="https://github.com/user-attachments/assets/9853053a-c085-4486-9d11-e78188ea4313" />
    
-1. **Tambah Data Perikanan**  
+2. **Tambah Data Perikanan**  
    Pengguna memilih menu tambah data, kemudian memasukkan data ikan seperti ID ikan, nama ikan, jenis ikan, jumlah stok, dan habitat. Jika memilih ikan laut, pengguna memasukkan kedalaman habitat, sedangkan jika memilih ikan air tawar, pengguna memasukkan jenis perairan. Setelah itu, pengguna memasukkan data lokasi penangkapan dan hasil penangkapan. Data lokasi dan hasil penangkapan menggunakan `idIkan` yang sama agar terhubung dengan data ikan.
-
-   #### Tambah Data Perikanan
 
 <p align="center">
 <img width="504" height="858" alt="image" src="https://github.com/user-attachments/assets/42d3d562-8232-4797-8842-ee9900585cba" />
@@ -32,28 +33,22 @@ Program dimulai dari `Main.java` dengan membuat objek `IkanController` dan `Ikan
 3. **Tampilkan Data Perikanan**  
    Pengguna memilih menu tampilkan data. Program mengambil data dari `ArrayList`, kemudian menampilkan data ikan beserta lokasi penangkapan dan hasil penangkapan yang memiliki `idIkan` yang sama.
 
-   #### Tampilkan Data Perikanan
-
 <p align="center">
 <img width="307" height="890" alt="image" src="https://github.com/user-attachments/assets/2a5626f7-4fc8-4284-93cf-a946493fb5ff" />
 
-5. **Ubah Data Perikanan**  
+4. **Ubah Data Perikanan**  
    Pengguna memilih menu ubah data dan memasukkan `idIkan` yang ingin diubah. Program mencari data berdasarkan ID tersebut. Jika data ditemukan, pengguna dapat mengubah data ikan, lokasi penangkapan, dan hasil penangkapan yang terkait dengan ID tersebut.
-
-   #### Ubah Data Perikanan
 
 <p align="center">
 <img width="409" height="857" alt="image" src="https://github.com/user-attachments/assets/cbad331d-f4ba-4c3c-a5fb-87763aa054d3" />
 
-7. **Hapus Data Perikanan**  
+5. **Hapus Data Perikanan**  
    Pengguna memilih menu hapus data dan memasukkan `idIkan` yang ingin dihapus. Program mencari data berdasarkan ID tersebut. Jika ditemukan, data ikan beserta lokasi penangkapan dan hasil penangkapan yang memiliki `idIkan` yang sama akan dihapus.
-
-   #### Hapus Data Perikanan
 
 <p align="center">
 <img width="325" height="753" alt="image" src="https://github.com/user-attachments/assets/5eeb5c1e-3fb8-4bc6-8241-d775d2dbf410" />
 
-9. **Keluar**  
+6. **Keluar**  
    Jika pengguna memilih menu keluar, perulangan menu dihentikan dan program selesai dijalankan.
 
 Selama proses input, program melakukan validasi untuk memastikan data yang dimasukkan sesuai dengan ketentuan. Jika input tidak sesuai, pengguna akan diminta memasukkan kembali data tersebut.
