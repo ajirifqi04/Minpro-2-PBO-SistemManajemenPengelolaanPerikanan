@@ -54,14 +54,17 @@ Encapsulation diterapkan dengan menggunakan access modifier `private` pada atrib
 
 Contoh pada `model/Ikan.java`:
 
+<p align="center">
 <img width="349" height="145" alt="image" src="https://github.com/user-attachments/assets/a14f4594-740c-4790-8f20-9e1e6151b122" />
 
 Atribut tersebut tidak dapat diakses secara langsung dari luar class. Untuk mengambil dan mengubah data digunakan method getter dan setter.
 
 Contohnya:
 
+<p align="center">
 <img width="343" height="87" alt="image" src="https://github.com/user-attachments/assets/1d93ea8d-852a-45a6-9d08-ffd3a92fb4d0" />
 
+<p align="center">
 <img width="533" height="83" alt="image" src="https://github.com/user-attachments/assets/e7e75ff0-7eb7-4adf-a9a1-867ee440e315" />
 
 
@@ -81,10 +84,12 @@ Ikan
 
 Pada `model/IkanLaut.java`, inheritance diterapkan menggunakan `extends`:
 
+<p align="center">
 <img width="430" height="60" alt="image" src="https://github.com/user-attachments/assets/df442a2b-5452-419a-9907-efa1c8c8b100" />
 
 Sedangkan `IkanAirTawar` juga mewarisi class `Ikan`:
 
+<p align="center">
 <img width="500" height="62" alt="image" src="https://github.com/user-attachments/assets/b968a653-98aa-4d21-91b9-60708272b265" />
 
 Kedua subclass tersebut mewarisi atribut dan method dari `Ikan`, kemudian memiliki atribut tambahan masing-masing. `IkanLaut` memiliki `kedalamanHabitat`, sedangkan `IkanAirTawar` memiliki `jenisPerairan`.
@@ -97,6 +102,7 @@ Saat `IkanController` dibuat, program langsung memasukkan data awal ke dalam `Ar
 
 Contohnya:
 
+<p align="center">
 <img width="253" height="243" alt="image" src="https://github.com/user-attachments/assets/411b6884-4c99-4284-b78a-4d18544bfc04" />
 
 Dengan adanya dummy data tersebut, pengguna dapat langsung melihat data ketika menjalankan fitur tampil data tanpa harus memasukkan data terlebih dahulu.
@@ -111,6 +117,7 @@ Validasi diterapkan pada beberapa input seperti ID, nama ikan, jenis ikan, jumla
 
 Contohnya :
 
+<p align="center">
 <img width="383" height="192" alt="image" src="https://github.com/user-attachments/assets/7e8968b9-b466-4b9d-a3b0-77db7d9e803c" />
 
 ## 4. Penjelasan Letak Penerapan Nilai Tambah
@@ -121,6 +128,7 @@ Program menggunakan struktur MVC dengan membagi class ke dalam beberapa package.
 
 Struktur package yang digunakan pada project adalah:
 
+<p align="center">
 <img width="340" height="350" alt="image" src="https://github.com/user-attachments/assets/543edb01-637f-438a-a85b-9e3e0f52c407" />
 
 - **Model** digunakan untuk menyimpan class yang berhubungan dengan data program, yaitu `Ikan`, `IkanLaut`, `IkanAirTawar`, `LokasiPenangkapan`, dan `HasilPenangkapan`.
@@ -136,6 +144,7 @@ Method `tampilkanDetail()` yang terdapat pada class `Ikan` dioverride pada class
 
 Contoh pada `model/IkanLaut.java`:
 
+<p align="center">
 <img width="925" height="233" alt="image" src="https://github.com/user-attachments/assets/22a1f9ff-1c1b-41a4-8ef2-0804c947774c" />
 
 Sedangkan pada `IkanAirTawar`, method yang sama digunakan untuk menampilkan informasi tambahan berupa `jenisPerairan`.
@@ -148,21 +157,26 @@ Berikut merupakan beberapa screenshot saat program dijalankan.
 
 #### Menu Utama
 
+<p align="center">
 <img width="421" height="179" alt="image" src="https://github.com/user-attachments/assets/9853053a-c085-4486-9d11-e78188ea4313" />
 
 #### Tambah Data Perikanan
 
+<p align="center">
 <img width="504" height="858" alt="image" src="https://github.com/user-attachments/assets/42d3d562-8232-4797-8842-ee9900585cba" />
 
 #### Tampilkan Data Perikanan
 
+<p align="center">
 <img width="307" height="890" alt="image" src="https://github.com/user-attachments/assets/2a5626f7-4fc8-4284-93cf-a946493fb5ff" />
 
 #### Ubah Data Perikanan
 
+<p align="center">
 <img width="409" height="857" alt="image" src="https://github.com/user-attachments/assets/cbad331d-f4ba-4c3c-a5fb-87763aa054d3" />
 
 #### Hapus Data Perikanan
 
+<p align="center">
 <img width="325" height="753" alt="image" src="https://github.com/user-attachments/assets/5eeb5c1e-3fb8-4bc6-8241-d775d2dbf410" />
 
