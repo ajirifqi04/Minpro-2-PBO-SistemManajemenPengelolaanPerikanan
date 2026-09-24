@@ -33,6 +33,33 @@ Program dimulai dari `Main.java` dengan membuat objek `IkanController` dan `Ikan
 
 Selama proses input, program melakukan validasi untuk memastikan data yang dimasukkan sesuai dengan ketentuan. Jika input tidak sesuai, pengguna akan diminta memasukkan kembali data tersebut.
 
+Berikut merupakan beberapa screenshot saat program dijalankan.
+
+#### Menu Utama
+
+<p align="center">
+<img width="421" height="179" alt="image" src="https://github.com/user-attachments/assets/9853053a-c085-4486-9d11-e78188ea4313" />
+
+#### Tambah Data Perikanan
+
+<p align="center">
+<img width="504" height="858" alt="image" src="https://github.com/user-attachments/assets/42d3d562-8232-4797-8842-ee9900585cba" />
+
+#### Tampilkan Data Perikanan
+
+<p align="center">
+<img width="307" height="890" alt="image" src="https://github.com/user-attachments/assets/2a5626f7-4fc8-4284-93cf-a946493fb5ff" />
+
+#### Ubah Data Perikanan
+
+<p align="center">
+<img width="409" height="857" alt="image" src="https://github.com/user-attachments/assets/cbad331d-f4ba-4c3c-a5fb-87763aa054d3" />
+
+#### Hapus Data Perikanan
+
+<p align="center">
+<img width="325" height="753" alt="image" src="https://github.com/user-attachments/assets/5eeb5c1e-3fb8-4bc6-8241-d775d2dbf410" />
+
 ## 3. Penjelasan Penerapan Encapsulation, Inheritance, Dummy Data, Validasi Input
 
 ### Struktur Class
@@ -150,33 +177,3 @@ Contoh pada `model/IkanLaut.java`:
 Sedangkan pada `IkanAirTawar`, method yang sama digunakan untuk menampilkan informasi tambahan berupa `jenisPerairan`.
 
 Dengan overriding tersebut, method `tampilkanDetail()` dapat memberikan tampilan yang berbeda sesuai dengan jenis objek yang digunakan.
-
-### Screenshot Output Sistem
-
-Berikut merupakan beberapa screenshot saat program dijalankan.
-
-#### Menu Utama
-
-<p align="center">
-<img width="421" height="179" alt="image" src="https://github.com/user-attachments/assets/9853053a-c085-4486-9d11-e78188ea4313" />
-
-#### Tambah Data Perikanan
-
-<p align="center">
-<img width="504" height="858" alt="image" src="https://github.com/user-attachments/assets/42d3d562-8232-4797-8842-ee9900585cba" />
-
-#### Tampilkan Data Perikanan
-
-<p align="center">
-<img width="307" height="890" alt="image" src="https://github.com/user-attachments/assets/2a5626f7-4fc8-4284-93cf-a946493fb5ff" />
-
-#### Ubah Data Perikanan
-
-<p align="center">
-<img width="409" height="857" alt="image" src="https://github.com/user-attachments/assets/cbad331d-f4ba-4c3c-a5fb-87763aa054d3" />
-
-#### Hapus Data Perikanan
-
-<p align="center">
-<img width="325" height="753" alt="image" src="https://github.com/user-attachments/assets/5eeb5c1e-3fb8-4bc6-8241-d775d2dbf410" />
-
