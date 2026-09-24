@@ -16,8 +16,6 @@ Program memiliki fitur tambah, tampil, ubah, dan hapus data perikanan. Pada prog
 
 Program dimulai dari `Main.java` dengan membuat objek `IkanController` dan `IkanView`. Setelah itu, `IkanController` menyiapkan `ArrayList` dan memasukkan satu data dummy sebagai data awal. Program kemudian menampilkan menu utama yang terdiri dari tambah data, tampilkan data, ubah data, hapus data, dan keluar.
 
-#### Menu Utama
-
 1. **Menu Utama**
    Pada tahap ini, sistem saat dijalankan akan menampilkan menu awal yang berisi pilihan untuk menambah, menampilkan, mengubah, dan menghapus data perikanan serta keluar dari program.
    
